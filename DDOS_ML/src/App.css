@@ -1,0 +1,72 @@
+/* General styling */
+body {
+  background-color: #fff; /* White background for the whole app */
+  font-family: Arial, sans-serif;
+  color: #000; /* Default text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Ensures the container has a white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+
+h1, h2, h3 {
+  color: #000; /* Use black text for headings */
+}
+
+button {
+  background-color: #6591f8; /* Main button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #888; /* Change button color on hover */
+}
+
+button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+.network-traffic,
+.intrusion-detection,
+.intrusion-prevention,
+.traffic-distribution {
+  background-color: #ffffff; /* Background color for all sections */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #fff; /* Ensures the container has a white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0.5, 1); /* Adds a subtle shadow */
+  border-radius: 8px;
+}
+
+.chart-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.prevention-container-a,
+.prevention-container-b,
+.prevention-container-c {
+  margin-top: 10px;
+  height: 150px; /* Set a fixed height for each container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  padding: 10px;
+  background-color: #fff; /* Ensure the containers have a white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for each container */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  border: 1px solid #888; /* Optional: Add a border to separate the containers visually */
+}
+

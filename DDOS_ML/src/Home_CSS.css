@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+   --main-color: #6591f8;
+   --light-color: #888;
+   --white: #fff;
+}
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+*::selection {
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+   width: 1rem;
+   height: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+}
+
+body {
+   background-color: var(--white);
+   padding-left: 30rem; /* Adjust this based on your layout */
+}
+
+section {
+   padding: 2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: var(--white);
+   z-index: 1000;
+   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.header .flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem 2rem;
+}
+
+.header .flex .logo {
+   font-size: 2.5rem;
+   color: black; /* Keep this color as it is for visibility */
+}
+
+.header .flex .logo img {
+   border-radius: 30%;
+   width: 90px;
+   height: 60px;
+   border: 1px solid skyblue;
+}
+
+.side-bar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 30rem;
+   background-color: var(--white);
+   height: 100vh;
+   border-right: 0.1rem solid rgba(0, 0, 0, 0.2);
+   z-index: 1200;
+}
+
+.side-bar #close-btn {
+   text-align: right;
+   padding: 2rem;
+   display: none;
+}
+
+.side-bar #close-btn i {
+   font-size: 2.5rem;
+   background: var(--main-color);
+   border-radius: 0.5rem;
+   color: var(--white);
+   cursor: pointer;
+   height: 4.5rem;
+   width: 4.5rem;
+   line-height: 4.5rem;
+   text-align: center;
+}
+
+.side-bar #close-btn i:hover {
+   background-color: black; /* Keep this for visibility */
+}
+
+.side-bar .navbar a {
+   display: block;
+   padding: 2rem;
+   font-size: 2rem;
+   color: var(--light-color);
+}
+
+.side-bar .navbar a i {
+   margin-right: 1.5rem;
+   color: var(--main-color);
+   transition: 0.2s linear;
+}
+
+.side-bar .navbar a:hover {
+   background-color: var(--light-color);
+}
+
+@media (max-width: 1200px) {
+   body {
+      padding-left: 0;
+   }
+
+   .side-bar {
+      left: -30rem;
+      transition: 0.2s linear;
+   }
+
+   .side-bar #close-btn {
+      display: block;
+   }
+}
+
+@media (max-width: 991px) {
+   html {
+      font-size: 55%;
+   }
+}
+
+@media (max-width: 450px) {
+   html {
+      font-size: 50%;
+   }
+}
